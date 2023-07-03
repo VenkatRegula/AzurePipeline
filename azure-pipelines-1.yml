@@ -1,0 +1,17 @@
+trigger:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo "This is the first step."
+  displayName: 'Step 1'
+
+- script: echo "This is the second step."
+  displayName: 'Step 2'
+
+- script: echo "This is the third step."
+  displayName: 'Step 3'
